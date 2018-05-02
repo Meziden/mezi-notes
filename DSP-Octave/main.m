@@ -31,7 +31,7 @@ function main()
             case 9
                 vec_freq1(i) = 1477; vec_freq2(i) = 852;
             case 0
-                vec_freq1(i) = 1336; vec_freq2(i) = 770;
+                vec_freq1(i) = 1336; vec_freq2(i) = 941;
         end
     end
     
@@ -54,11 +54,13 @@ function main()
         amp_697  = fft_x(floor(697 * SOURCE_TIME + 1));
         amp_770  = fft_x(floor(770 * SOURCE_TIME + 1));
         amp_852  = fft_x(floor(852 * SOURCE_TIME + 1));
+        amp_941  = fft_x(floor(941 * SOURCE_TIME + 1));
+        
         amp_1209 = fft_x(floor(1209 * SOURCE_TIME + 1));
         amp_1336 = fft_x(floor(1336 * SOURCE_TIME + 1));
         amp_1477 = fft_x(floor(1477 * SOURCE_TIME + 1));
         
-        ampmax_l = max([amp_697,amp_770,amp_852]);
+        ampmax_l = max([amp_697,amp_770,amp_852,amp_941]);
         ampmax_h = max([amp_1209,amp_1336,amp_1477]);
         
         if(ampmax_l == amp_697)
@@ -91,7 +93,7 @@ function main()
             end
         end
         
-        if(ampmax_l == amp_770 && ampmax_h == amp_1336)
+        if(ampmax_l == amp_941)
             result_num = 0;
         end
         
