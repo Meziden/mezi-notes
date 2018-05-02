@@ -61,8 +61,6 @@ function main()
         ampmax_l = max([amp_697,amp_770,amp_852]);
         ampmax_h = max([amp_1209,amp_1336,amp_1477]);
         
-        result_num = 0;
-        
         if(ampmax_l == amp_697)
             if(ampmax_h == amp_1209)
                 result_num = 1;
@@ -92,6 +90,11 @@ function main()
                 result_num = 9;
             end
         end
+        
+        if(ampmax_l == amp_770 && ampmax_h == amp_1336)
+            result_num = 0;
+        end
+        
         printf("%d ",result_num);
     end
     printf("\r\n");
