@@ -2,8 +2,8 @@ function main()
     %% Parameters
     FREQ_SAMPLE  = 2048;
     TIME_SAMPLE  = 1;
-    NUM_SAMPLE   = floor(FREQ_SAMPLE*TIME_SAMPLE)+1;
-    LENGTH_DFT   = 2049;
+    NUM_SAMPLE   = floor(FREQ_SAMPLE*TIME_SAMPLE);
+    LENGTH_DFT   = 2048;
     
     %% Signal Generating
     vec_t = linspace(0,TIME_SAMPLE,NUM_SAMPLE);
