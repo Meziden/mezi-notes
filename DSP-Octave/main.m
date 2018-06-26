@@ -51,14 +51,14 @@ function main()
         
         fft_x = abs(fft(vec_x)) ./ floor(SOURCE_TIME*SOURCE_FREQ);
         
-        amp_697  = fft_x(floor(697 * SOURCE_TIME + 1));
-        amp_770  = fft_x(floor(770 * SOURCE_TIME + 1));
-        amp_852  = fft_x(floor(852 * SOURCE_TIME + 1));
-        amp_941  = fft_x(floor(941 * SOURCE_TIME + 1));
+        amp_697  = fft_x(floor(697 * SOURCE_TIME));
+        amp_770  = fft_x(floor(770 * SOURCE_TIME));
+        amp_852  = fft_x(floor(852 * SOURCE_TIME));
+        amp_941  = fft_x(floor(941 * SOURCE_TIME));
         
-        amp_1209 = fft_x(floor(1209 * SOURCE_TIME + 1));
-        amp_1336 = fft_x(floor(1336 * SOURCE_TIME + 1));
-        amp_1477 = fft_x(floor(1477 * SOURCE_TIME + 1));
+        amp_1209 = fft_x(floor(1209 * SOURCE_TIME));
+        amp_1336 = fft_x(floor(1336 * SOURCE_TIME));
+        amp_1477 = fft_x(floor(1477 * SOURCE_TIME));
         
         ampmax_l = max([amp_697,amp_770,amp_852,amp_941]);
         ampmax_h = max([amp_1209,amp_1336,amp_1477]);
