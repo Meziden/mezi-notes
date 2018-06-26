@@ -38,7 +38,7 @@ function main()
     printf("PRINTING RECEIVED SIGNAL:\n");
     
     %% time sequence generating
-    vec_t = linspace(0,SOURCE_TIME,SOURCE_TIME*SOURCE_FREQ);
+    vec_t = linspace(0,SOURCE_TIME,floor(SOURCE_TIME*SOURCE_FREQ));
     
     %% signal generating using table and linear interpolation
     %% using table containing 256 float numbers
@@ -49,7 +49,7 @@ function main()
         %% play the sound
         sound(vec_x,SOURCE_FREQ);
         
-        fft_x = abs(fft(vec_x)) ./ (SOURCE_TIME*SOURCE_FREQ);
+        fft_x = abs(fft(vec_x)) ./ floor(SOURCE_TIME*SOURCE_FREQ);
         
         amp_697  = fft_x(floor(697 * SOURCE_TIME + 1));
         amp_770  = fft_x(floor(770 * SOURCE_TIME + 1));
