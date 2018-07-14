@@ -32,6 +32,8 @@ X(e^{j\omega}) = X_0(e^{j\omega})X_{ap}(e^{j\omega})
 $$
 可以得到，其形式为$X_{ap}(e^{j\omega})$在一系列脉冲上的取值，其值与傅里叶级数相对应。
 
+注：该图中“DFT”用DFS描述其实更加准确，因为DFS有周期性而DFT是有限长的。
+
   
 
 **2. Parseval's Relation / 帕塞瓦尔定理**
