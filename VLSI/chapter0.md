@@ -127,4 +127,4 @@ end rtl;
 
 ![simresult](res/simresult.png)
 
-至此，一个简单但naivenot模块仿真就完成了。
+至此，一个简单的naivenot模块仿真就完成了。
