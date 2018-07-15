@@ -95,3 +95,4 @@ Quartus现在就要求您指定您的项目名称及所在文件夹，还有Top-
 ![modelsim2](res/modelsim2.png)
 
  
+此外，在Linux系统上如果以上环境配置正确，但modelsim仍无法启动，请手动在Terminal中启动./linuxaloem/vsim，若弹出缺少对应的32位动态链接库(lib***.so)，请在安装这些库后再尝试启动。
