@@ -10,7 +10,7 @@
 
 鄙人推荐使用*Free Range VHDL*，以及*Digital Design and Computer Architecture*以提高您的VHDL水平，结合电路设计的客观因素进行社会实践。
 
-若有说明不详之处还请诸位指出，以便提升文档质量。李辛迅、张思明祝您学习愉快。
+若有说明不详之处还请诸位指出，以便提升文档质量。
 
   
 
