@@ -1,5 +1,5 @@
 %
-% Dynamo, Buck-Converter, Super-Capacitor System Simulation
+% Dynamo, Cistern, Buck-Converter, Super-Capacitor System Simulation
 % Powered by State-Space Average Model
 %
 % Matlab-Octave Compatibility Enchanced 
